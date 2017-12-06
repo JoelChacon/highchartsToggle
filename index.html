@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>Charts</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="apple-touch-icon" href="apple-touch-icon.png">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.css">
+</head>
+
+<body>
+    <div id="app">
+    	<div style='background-color: #EEEEEE; box-sizing: border-box; position: fixed;  width: 100%; height: 100%;'>
+	        <div class="jumbotron">
+	        	<div class='container well text-center' style="width: 55%; height: 70px; margin-top: 10px; position: relative; ">
+	        		<h2 style="font-family: fantasy; position: absolute; top: 50%; left: 50%; transform: translateX(-50%) translateY(-50%);">Some Fancy Toggling</h2>
+	        	</div>
+	        	<div class='container well text-center' style="margin-bottom: 0;">
+			        <a @click="toggleCountry('Tokyo')" class="btn btn-primary" style="margin-left: 20px; margin-right: 20px;">Tokyo</a>
+			        <a @click="toggleCountry('New York')" class="btn btn-primary" style="margin-left: 20px; margin-right: 20px;">New York</a>
+			        <a @click="toggleCountry('Berlin')" class="btn btn-primary" style="margin-left: 20px; margin-right: 20px;">Berlin</a>
+					<a @click="toggleCountry('London')" class="btn btn-primary" style="margin-left: 20px; margin-right: 20px;">London</a>
+				</div>
+			</div>
+	        <div class="jumbotron" style="margin-top: -30px;">
+	        	<div class="well container">
+	        		<highcharts :options="options" ref="highcharts"></highcharts>
+	        	</div>
+	        	<div style="width: 9%; margin-left: 10%;">&copy; Joel G. Chacon</div>
+	        </div>
+        </div>
+    </div>
+
+    <script src="http://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="https://unpkg.com/vue/dist/vue.min.js"></script>
+    <script src="https://unpkg.com/highcharts/highcharts.js"></script>
+    <!-- vue-highcharts should be load after Highcharts -->
+    <script src="https://unpkg.com/vue-highcharts/dist/vue-highcharts.min.js"></script>
+    <script src="./charts.js"></script>
+</body>
+
+</html>

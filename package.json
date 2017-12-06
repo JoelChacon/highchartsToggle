@@ -1,0 +1,14 @@
+{
+  "name": "code",
+  "version": "1.0.0",
+  "description": "highcharts practice",
+  "main": "es6Module.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Joel G. Chacon",
+  "license": "ISC",
+  "dependencies": {
+    "vue-highcharts": "0.0.10"
+  }
+}
